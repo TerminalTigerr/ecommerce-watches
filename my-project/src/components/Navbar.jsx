@@ -10,19 +10,20 @@ class Navbar extends Component {
           <img src={logo} className='w-full h-full'/>
         </div>
 
-        <div className='flex justify-between items-center'>
-          <ul className='flex justify-between items-center'>
+        <div className='flex justify-between items-center gap-12'>
+          <ul className='flex justify-between items-center gap-8'>
             {navLinks.map((link) =>  
-              <li key={link.id} className=' font-poppins text-white flex justify-between'>
-                <a href={`#`}>{link.title}</a>
+              <li key={link.id} className=' font-poppins text-base font-medium'>
+                <a href={`#`} className=' text-white'>{link.title}</a>
               </li>
             )}
           </ul>
+          <div className='bg-white rounded-full px-10 py-4 '>
+          <a href='#' className='font-poppins text-primary font-medium'>Start a Project?</a>
+          </div>
         </div>
 
-        <div className='bg-white rounded-xl px-5 py-3'>
-          <a href='#' className=' font-poppins text-black' >Start a Project?</a>
-        </div>
+        
       </nav>
     );
   }
