@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar'
+import Hero from './components/Hero';
 
 class App extends Component {
   render() {
@@ -8,6 +9,12 @@ class App extends Component {
         <div className='flex justify-center items-center'>
           <div className='w-full'>
             <Navbar />
+          </div>
+        </div>
+
+        <div className='justify-center items-center'>
+          <div className='w-full'>
+            <Hero />
           </div>
         </div>
       </div>
